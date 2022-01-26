@@ -27,7 +27,7 @@ SECRET_KEY = "r+#p)rz&e9a0t908g*6!n(2roy++(o!9#h*c6dssbubwe89_a("
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["flakewebby.pythonanywhere.com"]
 
 
 # Application definition
