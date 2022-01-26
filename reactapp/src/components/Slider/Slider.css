@@ -1,0 +1,88 @@
+.slider {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .slide {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .arrow {
+    height: 100px;
+    width: 160px;
+    display: flex;
+    align-items: start;
+    padding: 15px;
+    justify-content: center;
+    background: #fff;
+    cursor: pointer;
+    transition: transform ease-in .1s;
+    color: #666;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    box-shadow: 1px 20px 25px;
+    box-shadow: 0 1px 12px rgba(0,0,0,0.1), 
+    0 2px 4px rgba(0,0,0,0.1), 
+    0 4px 8px rgba(0,0,0,0.1), 
+    0 8px 16px rgba(0,0,0,0.1),
+    0 16px 32px rgba(0,0,0,0.1), 
+    0 32px 64px rgba(0,0,0,0.1);
+    user-select: none;
+  }
+  
+  .nextArrow {
+    position: absolute;
+    top: calc(50% - 70px);
+    right: -80px;
+    z-index: 999;
+    transform: rotate(-90deg);
+  }
+  
+  .nextArrow svg{
+    transform: rotate(90deg);
+  }
+  .backArrow {
+    position: absolute;
+    top: calc(50% - 70px);
+    left: -80px;
+    z-index: 999;
+    transform: rotate(90deg);
+  }
+
+  .backArrow svg{
+    transform: rotate(-90deg);
+  }
+  
+  .fa-arrow-right:before, .fa-arrow-left:before {
+    color: #222
+  }
+  
+  #vids {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #vids a:first-of-type {
+    margin-bottom: 5px;
+  }
+  
+
+@media(max-width:767px){
+  .arrow {
+    width: 140px;
+  }
+}

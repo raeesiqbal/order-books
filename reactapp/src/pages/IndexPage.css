@@ -1,0 +1,26 @@
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: lightblue;
+    padding: 30px;
+    border-radius: 25px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+
+.all-books-container{
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+
+@media(max-width:500px){
+    .all-books-container {
+      right: 30px;
+      bottom: 30px;
+    }
+  }

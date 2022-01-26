@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body, #root, .page-container{
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+a{
+  color: unset;
+  text-decoration: none;
+}
+
+/*UTILITY*/
+.d_none{
+  display: none!important;
+}
+.ReactModal__Overlay {
+  background: rgba(200, 200, 200, 0.8)!important;
+}
+.container{
+  max-width: 90%;
+  margin: auto;
+  height: 100%;
+}
+.page-padding{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.text-white{
+  color: #fff;
+}
+.text-capitalize{
+  text-transform: capitalize;
+}
+
+/*Buttons*/
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.95rem 0.35rem;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  border-radius: 50px;
+  width: 400px;
+  max-width: 100%;
+   margin: auto;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-sm{
+  font-size: 16px;
+  width: 200px;
+  padding: 0.75rem 0.2rem;
+}
+
+.btn-primary{
+  background-color: #60b5fd;
+  border-color: #60b5fd;
+  color: #fff;
+}
+
+.btn-trasparent{
+  background-color: transparent;
+  border-color: transparent;
+  color: #60b5fd;
+}
+.btn-block{
+  width: 100%;
+}
+
+
+input, textarea {
+  display: block;
+  outline: none;
+  width: 96%;
+  padding: 5px;
+  margin-top: 10px;
+  border: 2px solid #2ABB9B;
+  border-radius: 5px;
+  font-size: 1.5em;
+  font-family: 'Dosis', sans-serif;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+input:focus, textarea:focus {
+  box-shadow: 0 0 8px #2ABB9B;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  font-size: 1.55em;
+}
+
+
+
+input[type=range] {
+  height: 25px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  background: transparent;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #AAA;
+  border-radius: 10px;
+  border: 0px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #AAA;
+  height: 22px;
+  width: 22px;
+  border-radius: 25px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #AAA;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #AAA;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #AAA;
+  height: 22px;
+  width: 22px;
+  border-radius: 25px;
+  background: #fff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #AAA;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #AAA;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #AAA;
+  height: 22px;
+  width: 22px;
+  border-radius: 25px;
+  background: #fff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #AAA;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #AAA;
+}
+
+@media(max-width:767px){
+  .btn{
+    font-size: 18px;
+    padding: 0.6rem .35rem;
+  }
+}
+
+@media(max-width:500px){
+  .btn{
+    width: 100%;
+    font-size: 14px;
+    padding: 0.4rem .5rem;
+  }
+  input, textarea {
+    font-size: 12px;
+  }
+  input:focus, textarea:focus {
+    font-size: 14px;
+  }
+}

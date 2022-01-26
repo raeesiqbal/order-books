@@ -1,0 +1,93 @@
+.book {
+  position: relative;
+  width: 350px;
+  height: 470px;
+  background-color: #ddd;
+  border-radius: 5px;
+  box-shadow: -10px 3px 25px rgb(20 20 20);
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.book:first-child{
+  /* margin-top: 0; */
+}
+.book::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-image: linear-gradient(to right, #666, transparent);
+  left: 10px;
+}
+.book::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-image: linear-gradient(to right, #aaa 3%, #aaa 50%);
+  left: 0;
+  box-shadow: 1px 3px 5px rgba(20, 20, 20, 0.3);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.book .text {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  left: 0;
+  width: 100%;
+  margin: auto;
+}
+.book h1 {
+  font-size: 22px;
+  color: #666;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.book p {
+  color: #777;
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+.book .dots {
+  position: absolute;
+  bottom: 20px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  right: 20px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+}
+.book .dot {
+  width: 13px;
+  height: 13px;
+  background: #777;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.book .img-container{
+  width: 80%;
+  height: 250px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.book .img-container img{
+  height: 100%;
+  width: 100%;
+}
+
+
+@media(max-width:500px){
+  .book{
+      width: 100%;
+  }
+}

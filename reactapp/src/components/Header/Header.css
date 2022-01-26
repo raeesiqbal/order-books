@@ -1,0 +1,33 @@
+.navigation{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+}
+header{
+    background: #fff;
+    height: 70px;
+    border-bottom: 1px solid #ccc;
+}
+.page-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.navigation-back{
+    color: #333;
+}
+
+.menu-ham{
+    color: #666;
+}
+
+@media(max-width:767px){
+    .page-title{
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,65 @@
+.canvas-button{
+    display: flex;
+    background: #589edb;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+    height: 100px;
+    width: 110px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.canvas-button span{
+    margin-top: 10px;
+}
+.svg-inline--fa{
+    height: 1.5em!important;
+    width: 1.5em!important;
+}
+
+@media(max-width:767px){
+    .svg-inline--fa{
+        height: 1em!important;
+        width: 1em!important;
+    }
+
+    .canvas-button{
+        width: 90px;
+        height: 80px;
+        font-size: 16px;
+    }
+
+    .canvas-button:nth-child(2) span{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:500px){
+    .canvas-button{
+        width: 70px;
+        height: 65px;
+        font-size: 14px;
+    }
+
+    .canvas-button:nth-child(2) span{
+        font-size: 10px;
+    }
+}
+
+@media(max-width:350px){
+    .canvas-button{
+        width: 60px;
+        height: 55px;
+        font-size: 13px;
+    }
+
+    .canvas-button:nth-child(2) span{
+        font-size: 9px;
+    }
+}
